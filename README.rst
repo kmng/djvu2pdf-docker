@@ -20,6 +20,7 @@ Run details
 ::
 
   docker run --rm -u $(id -u):$(id -g) -v $(pwd):/opt/work ilyabystrov/djvu2pdf filename.djvu filename.pdf
+   docker run --rm  -v C:\Users\kng\Documents\Docker\djvu2pdf:/opt/work ilyabystrov/djvu2pdf Classical_mechanics.djvu Classical_mechanics.pdf
 
 * `--rm` option - removing container after execution
 * `-u $(id -u):$(id -g)` - run process with the same UID and GID
